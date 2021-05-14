@@ -1,9 +1,17 @@
 [package]
-name = "slack-web-rs"
-version = "0.1.0"
-authors = ["Saxon <34722463+noxasaxon@users.noreply.github.com>"]
+name = "openapi"
+version = "1.0.0"
+authors = ["OpenAPI Generator team and contributors"]
 edition = "2018"
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [dependencies]
+serde = "^1.0"
+serde_derive = "^1.0"
+serde_json = "^1.0"
+url = "^2.2"
+[dependencies.reqwest]
+version = "^0.11"
+default-features = false
+features = ["json", "multipart"]
+
+[dev-dependencies]
